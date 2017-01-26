@@ -55,7 +55,7 @@ __Event Fields__
 
 ---------------------------------------
 
-### on
+### scheduler.on
 
 Event handler.
 
@@ -72,12 +72,12 @@ __Arguments__
 
 ---------------------------------------
 
-### list
+### scheduler.list
 
 List all events.
 
 ```javascript
-scheduler.find('breakfast', function(err, events) {
+scheduler.list('breakfast', function(err, events) {
   // Do something with events
 })
 ```
@@ -87,7 +87,7 @@ __Arguments__
 
 ---------------------------------------
 
-### find
+### scheduler.find
 
 Find an event.
 
@@ -103,12 +103,12 @@ __Arguments__
 
 ---------------------------------------
 
-### remove
+### scheduler.remove
 
 Remove an event.
 
 ```javascript
-scheduler.find('breakfast', function(err, event) {
+scheduler.remove('breakfast', function(err, event) {
   // Event has been removed
 })
 ```
@@ -119,13 +119,13 @@ __Arguments__
 
 ---------------------------------------
 
-### enable
+### scheduler.enable
 
 Enable scheduler.
 
 ---------------------------------------
 
-### disable
+### scheduler.disable
 
 Disable scheduler.
 
